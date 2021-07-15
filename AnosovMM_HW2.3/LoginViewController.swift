@@ -9,6 +9,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    private let login = "User"
+    private let password = "Password"
+    
     //MARK: IB Outlets
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var userPasswordTF: UITextField!
@@ -35,7 +38,7 @@ class LoginViewController: UIViewController {
     // MARK: IB Actions
     
     @IBAction func logInAction(from sender: UIButton) {
-        if userNameTF.text == "User" && userPasswordTF.text == "Password" {
+        if userNameTF.text == login && userPasswordTF.text == password {
         } else {
             showAlert(title: "Warning", message: "Input user name or password is incorrect. Please try more.")
         }
@@ -44,9 +47,9 @@ class LoginViewController: UIViewController {
     @IBAction func identifySourceAlert(from sender: UIButton) {
         switch sender {
         case passwordRemaindButton:
-            showAlert(title: "OOPS", message: "Your password is Password")
+            showAlert(title: "OOPS", message: "Your password is \(password)")
         default:
-            showAlert(title: "OOPS", message: "Your user name is User")
+            showAlert(title: "OOPS", message: "Your user name is \(login)")
         }
     }
     

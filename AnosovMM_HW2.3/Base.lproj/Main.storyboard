@@ -24,13 +24,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8bt-hx-xGY">
                                         <rect key="frame" x="0.0" y="64" width="295" height="34"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -63,7 +63,7 @@
                                 <rect key="frame" x="140" y="373" width="95" height="36"/>
                                 <color key="backgroundColor" red="0.50242693036525887" green="0.48273483945907891" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="95" id="0pq-Aw-21V"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="95" id="0pq-Aw-21V"/>
                                     <constraint firstAttribute="height" constant="36" id="CfX-xj-cQu"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -126,7 +126,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ppy-LE-3fQ"/>
-                                    <constraint firstAttribute="width" constant="99" id="jNS-G8-10F"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="jNS-G8-10F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Log out">

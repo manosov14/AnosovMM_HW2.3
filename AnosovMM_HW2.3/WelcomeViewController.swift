@@ -11,8 +11,12 @@ class WelcomeViewController: UIViewController {
     var userNameTF: String? = nil
     var userPasswordTF: String? = nil
     
+    //MARK: IB Outlets
+    
     @IBOutlet weak var logOutButton: UIButton!
     @IBOutlet weak var welcomeMessage: UILabel!
+    
+    // MARK: Override methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
