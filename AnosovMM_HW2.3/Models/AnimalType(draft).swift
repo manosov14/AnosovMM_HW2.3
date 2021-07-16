@@ -13,11 +13,11 @@ enum AnimalType: Character {
             var typeName: String {
                 switch self {
                 case .cat:
-                    "Котейка"
+                    return "Котейка"
                 case .dog:
-                    "Собакен"
+                    return "Собакен"
                 case .parrot:
-                    "Попугайкин"
+                    return "Попугайкин"
                 }
             }
 }

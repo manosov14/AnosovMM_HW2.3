@@ -14,6 +14,16 @@
 		87CB9CAA269D706900F14A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CB9CA9269D706900F14A8B /* Assets.xcassets */; };
 		87CB9CAD269D706900F14A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CB9CAB269D706900F14A8B /* LaunchScreen.storyboard */; };
 		87CB9CB5269D84E000F14A8B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CB9CB4269D84E000F14A8B /* WelcomeViewController.swift */; };
+		87FE048C26A15305007638C0 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE048B26A15305007638C0 /* UserProfile.swift */; };
+		87FE048E26A16A3D007638C0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE048D26A16A3D007638C0 /* ProfileViewController.swift */; };
+		87FE049026A1D952007638C0 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE048F26A1D952007638C0 /* UserInfo.swift */; };
+		87FE049226A1D998007638C0 /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE049126A1D998007638C0 /* PersonalInfo.swift */; };
+		87FE049426A1D9D7007638C0 /* HoroscopeSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE049326A1D9D7007638C0 /* HoroscopeSign.swift */; };
+		87FE049626A1DA1D007638C0 /* WorkPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE049526A1DA1D007638C0 /* WorkPlace.swift */; };
+		87FE049826A1DA56007638C0 /* DetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE049726A1DA56007638C0 /* DetailInfo.swift */; };
+		87FE049A26A1DAB1007638C0 /* Hobbie(draft).swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE049926A1DAB1007638C0 /* Hobbie(draft).swift */; };
+		87FE049C26A1DADF007638C0 /* Pet(draft).swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE049B26A1DADF007638C0 /* Pet(draft).swift */; };
+		87FE049E26A1DB0E007638C0 /* AnimalType(draft).swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE049D26A1DB0E007638C0 /* AnimalType(draft).swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		87CB9CAC269D706900F14A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87CB9CAE269D706900F14A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87CB9CB4269D84E000F14A8B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		87FE048B26A15305007638C0 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		87FE048D26A16A3D007638C0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		87FE048F26A1D952007638C0 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		87FE049126A1D998007638C0 /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
+		87FE049326A1D9D7007638C0 /* HoroscopeSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeSign.swift; sourceTree = "<group>"; };
+		87FE049526A1DA1D007638C0 /* WorkPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkPlace.swift; sourceTree = "<group>"; };
+		87FE049726A1DA56007638C0 /* DetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfo.swift; sourceTree = "<group>"; };
+		87FE049926A1DAB1007638C0 /* Hobbie(draft).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hobbie(draft).swift"; sourceTree = "<group>"; };
+		87FE049B26A1DADF007638C0 /* Pet(draft).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pet(draft).swift"; sourceTree = "<group>"; };
+		87FE049D26A1DB0E007638C0 /* AnimalType(draft).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnimalType(draft).swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +78,66 @@
 		87CB9C9F269D706600F14A8B /* AnosovMM_HW2.3 */ = {
 			isa = PBXGroup;
 			children = (
-				87CB9CA0269D706600F14A8B /* AppDelegate.swift */,
-				87CB9CA2269D706600F14A8B /* SceneDelegate.swift */,
-				87CB9CA4269D706600F14A8B /* LoginViewController.swift */,
-				87CB9CB4269D84E000F14A8B /* WelcomeViewController.swift */,
-				87CB9CA6269D706600F14A8B /* Main.storyboard */,
-				87CB9CA9269D706900F14A8B /* Assets.xcassets */,
-				87CB9CAB269D706900F14A8B /* LaunchScreen.storyboard */,
-				87CB9CAE269D706900F14A8B /* Info.plist */,
+				87FE048A26A1529D007638C0 /* Models */,
+				87FE048926A14F8B007638C0 /* Supporting Files */,
+				87FE048626A14F01007638C0 /* ViewControllers */,
+				87FE048526A14EA6007638C0 /* Storyboards */,
+				87FE048826A14F64007638C0 /* Resources */,
 			);
 			path = AnosovMM_HW2.3;
+			sourceTree = "<group>";
+		};
+		87FE048526A14EA6007638C0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				87CB9CA6269D706600F14A8B /* Main.storyboard */,
+				87CB9CAB269D706900F14A8B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		87FE048626A14F01007638C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				87CB9CA4269D706600F14A8B /* LoginViewController.swift */,
+				87CB9CB4269D84E000F14A8B /* WelcomeViewController.swift */,
+				87FE048D26A16A3D007638C0 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		87FE048826A14F64007638C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87CB9CA9269D706900F14A8B /* Assets.xcassets */,
+				87CB9CAE269D706900F14A8B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87FE048926A14F8B007638C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87CB9CA0269D706600F14A8B /* AppDelegate.swift */,
+				87CB9CA2269D706600F14A8B /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87FE048A26A1529D007638C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87FE048B26A15305007638C0 /* UserProfile.swift */,
+				87FE048F26A1D952007638C0 /* UserInfo.swift */,
+				87FE049126A1D998007638C0 /* PersonalInfo.swift */,
+				87FE049326A1D9D7007638C0 /* HoroscopeSign.swift */,
+				87FE049526A1DA1D007638C0 /* WorkPlace.swift */,
+				87FE049726A1DA56007638C0 /* DetailInfo.swift */,
+				87FE049926A1DAB1007638C0 /* Hobbie(draft).swift */,
+				87FE049B26A1DADF007638C0 /* Pet(draft).swift */,
+				87FE049D26A1DB0E007638C0 /* AnimalType(draft).swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +210,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FE049A26A1DAB1007638C0 /* Hobbie(draft).swift in Sources */,
+				87FE048E26A16A3D007638C0 /* ProfileViewController.swift in Sources */,
 				87CB9CA5269D706600F14A8B /* LoginViewController.swift in Sources */,
+				87FE048C26A15305007638C0 /* UserProfile.swift in Sources */,
+				87FE049826A1DA56007638C0 /* DetailInfo.swift in Sources */,
+				87FE049426A1D9D7007638C0 /* HoroscopeSign.swift in Sources */,
+				87FE049E26A1DB0E007638C0 /* AnimalType(draft).swift in Sources */,
 				87CB9CB5269D84E000F14A8B /* WelcomeViewController.swift in Sources */,
 				87CB9CA1269D706600F14A8B /* AppDelegate.swift in Sources */,
+				87FE049626A1DA1D007638C0 /* WorkPlace.swift in Sources */,
+				87FE049226A1D998007638C0 /* PersonalInfo.swift in Sources */,
+				87FE049026A1D952007638C0 /* UserInfo.swift in Sources */,
+				87FE049C26A1DADF007638C0 /* Pet(draft).swift in Sources */,
 				87CB9CA3269D706600F14A8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z35FK4LT8;
-				INFOPLIST_FILE = AnosovMM_HW2.3/Info.plist;
+				INFOPLIST_FILE = AnosovMM_HW2.3/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +391,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z35FK4LT8;
-				INFOPLIST_FILE = AnosovMM_HW2.3/Info.plist;
+				INFOPLIST_FILE = AnosovMM_HW2.3/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

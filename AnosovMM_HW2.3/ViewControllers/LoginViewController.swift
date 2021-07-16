@@ -9,8 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    private let login = "User"
-    private let password = "Password"
+    private let userInfo = UserProfile.getUserProfile()
     
     //MARK: IB Outlets
     @IBOutlet weak var userNameTF: UITextField!
@@ -24,8 +23,9 @@ class LoginViewController: UIViewController {
         logInButton.layer.cornerRadius = logInButton.frame.width / 15
         
     }
-    // MARK: Override methods
     
+    // MARK: Navigation
+       
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let dvc = segue.destination as? WelcomeViewController else { return }
         dvc.userNameTF = userNameTF.text
@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
     // MARK: IB Actions
     
     @IBAction func logInAction(from sender: UIButton) {
-        if userNameTF.text == login && userPasswordTF.text == password {
+        if userNameTF.text == userInfo.userInfo.username && userPasswordTF.text == userInfo.userInfo.password {
         } else {
             showAlert(title: "Warning", message: "Input user name or password is incorrect. Please try more.")
         }
@@ -47,9 +47,9 @@ class LoginViewController: UIViewController {
     @IBAction func identifySourceAlert(from sender: UIButton) {
         switch sender {
         case passwordRemaindButton:
-            showAlert(title: "OOPS", message: "Your password is \(password)")
+            showAlert(title: "OOPS", message: "Your password is \(userInfo.userInfo.password)")
         default:
-            showAlert(title: "OOPS", message: "Your user name is \(login)")
+            showAlert(title: "OOPS", message: "Your user name is \(userInfo.userInfo.username)")
         }
     }
     
@@ -57,7 +57,7 @@ class LoginViewController: UIViewController {
         userNameTF.text = ""
         userPasswordTF.text = ""
     }
-        
+    
     // MARK: Private methods
     
     private func showAlert(title: String, message: String) {

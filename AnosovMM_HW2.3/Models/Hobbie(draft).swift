@@ -17,19 +17,20 @@ enum Hobbie: Character {
     var definit:  String {
         switch self {
         case .programming:
-            "Программирование на swift"
+            return "Программирование на swift"
         case .printing:
-            "Рисование"
+            return "Рисование"
         case .snowboard:
-            "Катание на сноуборде"
+            return "Катание на сноуборде"
         case .velocity:
-            "Прогулки на велосипеде "
+            return "Прогулки на велосипеде "
         case .run:
-            "Пробежки"
+            return "Пробежки"
         case .longboarding:
-            "Катание на лонгборде"
+            return "Катание на лонгборде"
         case .swimming:
-            " Дайвинг"
+            return " Дайвинг"
         }
     }
 }
+

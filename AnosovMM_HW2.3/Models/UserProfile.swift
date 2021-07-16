@@ -18,12 +18,14 @@ struct UserProfile {
             personalInfo: PersonalInfo(
                 name: "Михаил",
                 lastname: "Аносов",
+                birthDate: "14.07.1990",
                 gender: "Мужской",
                 detailInfo: DetailInfo(
                     placeOfBirth: "Москва",
                     horoscopeSign: HoroscopeSign(
                         name: "Рак",
-                        symbolSign: "🦀")),
+                        symbolSign: "🦀")
+                ),
                 placeOfRezidence: "Москва",
                 workPlaces: [
                     WorkPlace(
@@ -31,13 +33,14 @@ struct UserProfile {
                         dateIn: "2019",
                         dateOut: "Until now"),
                     WorkPlace(
-                        organizationName: "Tinkoff Group", specialization: "Senior system Analyst",
+                        organizationName: "Tinkoff Group", specialization: "Senior system analyst",
                         dateIn: "2018",
                         dateOut: "2019"),
                     WorkPlace(
                         organizationName: "Alfa Bank", specialization: "",
                         dateIn: "2017",
-                        dateOut: "2018")]
+                        dateOut: "2018")
+                ]
             ))
     }
 } 
