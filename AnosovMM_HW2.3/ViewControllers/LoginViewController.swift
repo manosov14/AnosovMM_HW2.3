@@ -25,12 +25,29 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: Navigation
-       
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let dvc = segue.destination as? WelcomeViewController else { return }
-        dvc.userNameTF = userNameTF.text
-    }
     
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //        guard let mainTabBarController = segue.destination as? UITabBarController else { return }
+    //        mainTabBarController.userNameTF = userNameTF.text
+    //
+    //    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        
+        for viewController in tabBarVC.viewControllers! {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userNameTF = userInfo.userInfo.username
+            }
+            else if let profileVC = viewController as? ProfileViewController {
+                profileVC.placeOfBirth = userInfo.personalInfo.detailInfo.placeOfBirth
+                profileVC.placeOfRezidence = userInfo.personalInfo.detailInfo.placeOfRezidence
+                profileVC.currentWorkPlace = userInfo.personalInfo.workPlaces[0].organizationName
+            }
+        }
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
     }

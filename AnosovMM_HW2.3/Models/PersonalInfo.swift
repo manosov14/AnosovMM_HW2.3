@@ -11,6 +11,5 @@ struct PersonalInfo {
     let birthDate: String
     let gender: String
     let detailInfo: DetailInfo
-    let placeOfRezidence: String
     let workPlaces: [WorkPlace]
 }

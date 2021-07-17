@@ -7,7 +7,9 @@
 
 struct DetailInfo {
     let placeOfBirth: String
+    let placeOfRezidence: String
     let horoscopeSign: HoroscopeSign
+    let familyStatus: FamilyStatus
     //    let hobbies: [Hobbie]
     //    let pets: [Pet]
 }

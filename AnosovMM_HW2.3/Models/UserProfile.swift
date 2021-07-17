@@ -12,8 +12,8 @@ struct UserProfile {
     static func getUserProfile() -> UserProfile {
         UserProfile(
             userInfo: UserInfo(
-                username: "manosov14",
-                password: "12345",
+                username: "",
+                password: "",
                 email: "manosov14@gmail.com"),
             personalInfo: PersonalInfo(
                 name: "Михаил",
@@ -22,11 +22,12 @@ struct UserProfile {
                 gender: "Мужской",
                 detailInfo: DetailInfo(
                     placeOfBirth: "Москва",
+                    placeOfRezidence: "Москва",
                     horoscopeSign: HoroscopeSign(
                         name: "Рак",
-                        symbolSign: "🦀")
+                        symbolSign: "🦀"),
+                    familyStatus: .married
                 ),
-                placeOfRezidence: "Москва",
                 workPlaces: [
                     WorkPlace(
                         organizationName: "Gazprombank AO", specialization: "Lead system analyst",

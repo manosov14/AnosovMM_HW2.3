@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87BC265D26A2CA2E0081634A /* DetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC265C26A2CA2E0081634A /* DetailInfoViewController.swift */; };
+		87BC265F26A2CCB90081634A /* FamilyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC265E26A2CCB90081634A /* FamilyStatus.swift */; };
 		87CB9CA1269D706600F14A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CB9CA0269D706600F14A8B /* AppDelegate.swift */; };
 		87CB9CA3269D706600F14A8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CB9CA2269D706600F14A8B /* SceneDelegate.swift */; };
 		87CB9CA5269D706600F14A8B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CB9CA4269D706600F14A8B /* LoginViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87BC265C26A2CA2E0081634A /* DetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoViewController.swift; sourceTree = "<group>"; };
+		87BC265E26A2CCB90081634A /* FamilyStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyStatus.swift; sourceTree = "<group>"; };
 		87CB9C9D269D706600F14A8B /* AnosovMM_HW2.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnosovMM_HW2.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CB9CA0269D706600F14A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87CB9CA2269D706600F14A8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			children = (
 				87CB9CA4269D706600F14A8B /* LoginViewController.swift */,
 				87CB9CB4269D84E000F14A8B /* WelcomeViewController.swift */,
+				87BC265C26A2CA2E0081634A /* DetailInfoViewController.swift */,
 				87FE048D26A16A3D007638C0 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
@@ -136,6 +141,7 @@
 				87FE049926A1DAB1007638C0 /* Hobbie(draft).swift */,
 				87FE049B26A1DADF007638C0 /* Pet(draft).swift */,
 				87FE049D26A1DB0E007638C0 /* AnimalType(draft).swift */,
+				87BC265E26A2CCB90081634A /* FamilyStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,9 +219,11 @@
 				87FE049A26A1DAB1007638C0 /* Hobbie(draft).swift in Sources */,
 				87FE048E26A16A3D007638C0 /* ProfileViewController.swift in Sources */,
 				87CB9CA5269D706600F14A8B /* LoginViewController.swift in Sources */,
+				87BC265F26A2CCB90081634A /* FamilyStatus.swift in Sources */,
 				87FE048C26A15305007638C0 /* UserProfile.swift in Sources */,
 				87FE049826A1DA56007638C0 /* DetailInfo.swift in Sources */,
 				87FE049426A1D9D7007638C0 /* HoroscopeSign.swift in Sources */,
+				87BC265D26A2CA2E0081634A /* DetailInfoViewController.swift in Sources */,
 				87FE049E26A1DB0E007638C0 /* AnimalType(draft).swift in Sources */,
 				87CB9CB5269D84E000F14A8B /* WelcomeViewController.swift in Sources */,
 				87CB9CA1269D706600F14A8B /* AppDelegate.swift in Sources */,
