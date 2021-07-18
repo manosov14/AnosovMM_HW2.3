@@ -8,4 +8,6 @@
 struct Authorization {
     let username: String
     let password: String
+    let networkStatus: Bool
+    let userStatus: String
 }

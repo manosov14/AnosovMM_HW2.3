@@ -17,4 +17,5 @@ struct PersonalInfo {
     let pets: [String]
     let hobbies: [String]
     let detailInfo: DetailInfo
+    let favoriteQuotes: [String]
 }

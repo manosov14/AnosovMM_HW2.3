@@ -6,7 +6,7 @@
 //
 
 struct DetailInfo {
-    let educationOrganizations: [EducateOrganization]
+    let educateOrganizations: [EducateOrganization]
     let workPlaces: [WorkPlace]
     let contactInfo: [Contact]
 }

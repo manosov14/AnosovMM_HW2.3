@@ -6,14 +6,16 @@
 //
 
 struct UserProfile {
-    let userInfo: Authorization
+    let authorization: Authorization
     let personalInfo: PersonalInfo
     
     static func getUserProfile() -> UserProfile {
         UserProfile(
-            userInfo: Authorization(
-                username: "",
-                password: ""
+            authorization: Authorization (
+                username: "manosov",
+                password: "12345",
+                networkStatus: true,
+                userStatus: "В поиске свежих идей"
             ),
             personalInfo: PersonalInfo(
                 name: "Михаил",
@@ -24,15 +26,20 @@ struct UserProfile {
                 placeOfBirth: "Москва",
                 placeOfRezidence: "Москва",
                 familyStatus: .married,
-                pets: ["🐈"],
+                pets: ["🐈","🐜"],
                 hobbies: ["🧑‍💻","👨‍🎨","🏂","🚴‍♂️","🏃","🛹","🤿"],
                 detailInfo: DetailInfo(
-                    educationOrganizations: [
+                    educateOrganizations: [
+                        EducateOrganization(
+                            name: "Московский институт имени С.Ю.Витте",
+                            yearIn: "2006",
+                            yearOut: "2009",
+                            fullName: "Московский Технический колледж, 2006 - 2009"),
                         EducateOrganization(
                             name: "Московский институт имени С.Ю.Витте",
                             yearIn: "2010",
                             yearOut: "2013",
-                            fullName: "Московский институт имени С.Ю.Витте, 2010 - 2013 ")],
+                            fullName: "Московский институт имени С.Ю.Витте, 2010 - 2013")],
                     workPlaces: [
                         WorkPlace(
                             organizationName: "Gazprombank AO", specialization: "Lead system analyst",
@@ -58,7 +65,15 @@ struct UserProfile {
                             type: "email",
                             value: "manosov14@gmail.com")
                     ]
-                )
+                ),
+                favoriteQuotes: [
+                    "Чтобы освящать других нужно носить солнце в себе",
+                    "Чтобы освящать других нужно носить солнце в себе",
+                    "Чтобы освящать других нужно носить солнце в себе",
+                    "Чтобы освящать других нужно носить солнце в себе",
+                    "Чтобы освящать других нужно носить солнце в себе",
+                    "Чтобы освящать других нужно носить солнце в себе"
+                ]
             )
         )
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class ContactViewController: UIViewController {
     var userNameTF: String? = nil
     var userPasswordTF: String? = nil
     
