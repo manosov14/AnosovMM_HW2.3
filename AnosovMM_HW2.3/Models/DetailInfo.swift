@@ -6,10 +6,9 @@
 //
 
 struct DetailInfo {
-    let placeOfBirth: String
-    let placeOfRezidence: String
-    let horoscopeSign: HoroscopeSign
-    let familyStatus: FamilyStatus
+    let educationOrganizations: [EducateOrganization]
+    let workPlaces: [WorkPlace]
+    let contactInfo: [Contact]
     //    let hobbies: [Hobbie]
     //    let pets: [Pet]
 }

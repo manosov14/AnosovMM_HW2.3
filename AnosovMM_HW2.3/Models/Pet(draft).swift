@@ -7,5 +7,11 @@
 
 struct Pet {
     let name: String
-    let type: AnimalType
+    let AnimalTypes: [AnimalType]
+    
+    enum AnimalType: Character {
+        case cat = "🐈"
+        case dog = "🐕"
+        case parrot = "🦜"
+    }
 }

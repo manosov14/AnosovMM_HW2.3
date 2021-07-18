@@ -10,5 +10,4 @@ struct WorkPlace {
     let specialization: String?
     let dateIn: String
     let dateOut: String
-    
 }

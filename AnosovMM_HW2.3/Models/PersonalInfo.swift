@@ -10,6 +10,10 @@ struct PersonalInfo {
     let lastname: String
     let birthDate: String
     let gender: String
+    let placeOfBirth: String
+    let placeOfRezidence: String
+    let horoscopeSign: HoroscopeSign
+    let familyStatus: FamilyStatus
+    let currentPlaceOfWork: String
     let detailInfo: DetailInfo
-    let workPlaces: [WorkPlace]
 }

@@ -6,42 +6,70 @@
 //
 
 struct UserProfile {
-    let userInfo: UserInfo
+    let userInfo: Authorization
     let personalInfo: PersonalInfo
     
     static func getUserProfile() -> UserProfile {
         UserProfile(
-            userInfo: UserInfo(
+            userInfo: Authorization(
                 username: "",
-                password: "",
-                email: "manosov14@gmail.com"),
+                password: ""
+            ),
             personalInfo: PersonalInfo(
                 name: "Михаил",
                 lastname: "Аносов",
                 birthDate: "14.07.1990",
                 gender: "Мужской",
-                detailInfo: DetailInfo(
-                    placeOfBirth: "Москва",
-                    placeOfRezidence: "Москва",
-                    horoscopeSign: HoroscopeSign(
-                        name: "Рак",
-                        symbolSign: "🦀"),
-                    familyStatus: .married
+                placeOfBirth: "Москва",
+                placeOfRezidence: "Москва",
+                horoscopeSign: HoroscopeSign(
+                    name: "Рак",
+                    symbolSign: "🦀"
                 ),
-                workPlaces: [
-                    WorkPlace(
-                        organizationName: "Gazprombank AO", specialization: "Lead system analyst",
-                        dateIn: "2019",
-                        dateOut: "Until now"),
-                    WorkPlace(
-                        organizationName: "Tinkoff Group", specialization: "Senior system analyst",
-                        dateIn: "2018",
-                        dateOut: "2019"),
-                    WorkPlace(
-                        organizationName: "Alfa Bank", specialization: "",
-                        dateIn: "2017",
-                        dateOut: "2018")
-                ]
+                familyStatus: .married,
+                currentPlaceOfWork: "Gazprombank AO",
+                detailInfo: DetailInfo(
+                    educationOrganizations: [
+                        EducateOrganization(
+                        name: "Московский институт имени С.Ю.Витте",
+                        yearIn: "2010",
+                        yearOut: "2013",
+                        fullName: "Московский институт имени С.Ю.Витте, 2010 - 2013 "
+                        )
+                    ],
+                    workPlaces: [
+                        WorkPlace(
+                            organizationName: "Gazprombank AO", specialization: "Lead system analyst",
+                            dateIn: "2019",
+                            dateOut: "Until now"
+                        ),
+                        WorkPlace(
+                            organizationName: "Tinkoff Group", specialization: "Senior system analyst",
+                            dateIn: "2018",
+                            dateOut: "2019"
+                        ),
+                        WorkPlace(
+                            organizationName: "Alfa Bank", specialization: "",
+                            dateIn: "2017",
+                            dateOut: "2018"
+                        )
+                    ],
+                    contactInfo: [
+                        Contact(
+                            type: "inst",
+                            value: "mikhael.a"
+                        ),
+                        Contact(
+                            type: "teleg",
+                            value: "mianosov"
+                        ),
+                        Contact(
+                            type: "email",
+                            value: "manosov14@gmail.com"
+                        )
+                    ]
+                )
+                
             ))
     }
 } 
