@@ -9,6 +9,4 @@ struct DetailInfo {
     let educationOrganizations: [EducateOrganization]
     let workPlaces: [WorkPlace]
     let contactInfo: [Contact]
-    //    let hobbies: [Hobbie]
-    //    let pets: [Pet]
 }

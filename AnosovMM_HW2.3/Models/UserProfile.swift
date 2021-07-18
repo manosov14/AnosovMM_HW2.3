@@ -19,58 +19,48 @@ struct UserProfile {
                 name: "Михаил",
                 lastname: "Аносов",
                 birthDate: "14.07.1990",
+                horoscopeSign: "🦀",
                 gender: "Мужской",
                 placeOfBirth: "Москва",
                 placeOfRezidence: "Москва",
-                horoscopeSign: HoroscopeSign(
-                    name: "Рак",
-                    symbolSign: "🦀"
-                ),
                 familyStatus: .married,
-                currentPlaceOfWork: "Gazprombank AO",
+                pets: ["🐈"],
+                hobbies: ["🧑‍💻","👨‍🎨","🏂","🚴‍♂️","🏃","🛹","🤿"],
                 detailInfo: DetailInfo(
                     educationOrganizations: [
                         EducateOrganization(
-                        name: "Московский институт имени С.Ю.Витте",
-                        yearIn: "2010",
-                        yearOut: "2013",
-                        fullName: "Московский институт имени С.Ю.Витте, 2010 - 2013 "
-                        )
-                    ],
+                            name: "Московский институт имени С.Ю.Витте",
+                            yearIn: "2010",
+                            yearOut: "2013",
+                            fullName: "Московский институт имени С.Ю.Витте, 2010 - 2013 ")],
                     workPlaces: [
                         WorkPlace(
                             organizationName: "Gazprombank AO", specialization: "Lead system analyst",
                             dateIn: "2019",
-                            dateOut: "Until now"
-                        ),
+                            dateOut: "Until now"),
                         WorkPlace(
                             organizationName: "Tinkoff Group", specialization: "Senior system analyst",
                             dateIn: "2018",
-                            dateOut: "2019"
-                        ),
+                            dateOut: "2019"),
                         WorkPlace(
                             organizationName: "Alfa Bank", specialization: "",
                             dateIn: "2017",
-                            dateOut: "2018"
-                        )
+                            dateOut: "2018")
                     ],
                     contactInfo: [
                         Contact(
                             type: "inst",
-                            value: "mikhael.a"
-                        ),
+                            value: "mikhael.a"),
                         Contact(
                             type: "teleg",
-                            value: "mianosov"
-                        ),
+                            value: "mianosov"),
                         Contact(
                             type: "email",
-                            value: "manosov14@gmail.com"
-                        )
+                            value: "manosov14@gmail.com")
                     ]
                 )
-                
-            ))
+            )
+        )
     }
 } 
 

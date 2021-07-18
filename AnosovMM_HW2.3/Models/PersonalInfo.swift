@@ -9,11 +9,12 @@ struct PersonalInfo {
     let name: String
     let lastname: String
     let birthDate: String
+    let horoscopeSign: String
     let gender: String
     let placeOfBirth: String
     let placeOfRezidence: String
-    let horoscopeSign: HoroscopeSign
     let familyStatus: FamilyStatus
-    let currentPlaceOfWork: String
+    let pets: [String]
+    let hobbies: [String]
     let detailInfo: DetailInfo
 }
