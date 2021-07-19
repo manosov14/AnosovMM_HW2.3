@@ -6,7 +6,7 @@
 //
 
 enum FamilyStatus: String {
-    case single = "Холост / Не замужем"
-    case married = "Женат / Замужем"
+    case single = "Холост"
+    case married = "Женат"
     case engaged = "Помолвлен"
 }

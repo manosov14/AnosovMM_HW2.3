@@ -374,29 +374,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPJ-fm-jiC">
-                                <rect key="frame" x="118" y="110" width="84.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <color key="highlightedColor" systemColor="linkColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsX-iH-Nov">
-                                <rect key="frame" x="110.5" y="253" width="99" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ppy-LE-3fQ"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="jNS-G8-10F"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Log out">
-                                    <color key="titleColor" systemColor="systemIndigoColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="jMq-mw-DAS" kind="unwind" unwindAction="unwindSegueToLoginScreenFor:" id="Baj-rT-dO5"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="uJ5-Rb-7f2" userLabel="Контакты">
-                                <rect key="frame" x="118" y="318" width="93" height="70.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="uJ5-Rb-7f2" userLabel="Контакты">
+                                <rect key="frame" x="113.5" y="249" width="93" height="70.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixV-O8-o7R">
                                         <rect key="frame" x="0.0" y="0.0" width="75.5" height="20.5"/>
@@ -439,24 +418,16 @@
                         <viewLayoutGuide key="safeArea" id="VhZ-93-ab5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sPJ-fm-jiC" firstAttribute="centerX" secondItem="AYM-vR-miS" secondAttribute="centerX" id="85b-jG-yEY"/>
-                            <constraint firstItem="tsX-iH-Nov" firstAttribute="centerX" secondItem="AYM-vR-miS" secondAttribute="centerX" id="Mwl-IN-CVd"/>
-                            <constraint firstItem="VhZ-93-ab5" firstAttribute="bottom" secondItem="tsX-iH-Nov" secondAttribute="bottom" constant="285" id="Nio-eg-vKP"/>
-                            <constraint firstItem="sPJ-fm-jiC" firstAttribute="centerX" secondItem="AYM-vR-miS" secondAttribute="centerX" id="V8o-nD-jvQ"/>
-                            <constraint firstItem="sPJ-fm-jiC" firstAttribute="top" secondItem="VhZ-93-ab5" secondAttribute="top" constant="110" id="u6B-de-x9Z"/>
+                            <constraint firstItem="uJ5-Rb-7f2" firstAttribute="centerX" secondItem="AYM-vR-miS" secondAttribute="centerX" id="Ffh-Wk-bsC"/>
+                            <constraint firstItem="uJ5-Rb-7f2" firstAttribute="centerY" secondItem="AYM-vR-miS" secondAttribute="centerY" id="XDE-dU-hBA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Контакты" selectedImage="phone" catalog="system" springLoaded="YES" id="jFY-QV-53L">
                         <color key="badgeColor" systemColor="systemBlueColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="wa0-mL-TGT"/>
-                    <connections>
-                        <outlet property="logOutButton" destination="tsX-iH-Nov" id="4sE-Gu-EGL"/>
-                        <outlet property="welcomeMessage" destination="sPJ-fm-jiC" id="70P-rX-CHg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGg-Z4-bcY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="jMq-mw-DAS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1931" y="955"/>
         </scene>
@@ -750,9 +721,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -9,16 +9,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    var fio = ""
-    var status = ""
-    var userName = ""
-    var placeOfBirth = ""
-    var placeOfRezidence = ""
-    var currentWorkPlace = ""
-    var pets: [String] = []
-    
-    private let userInfo = UserProfile.getUserProfile()
-    
+    //MARK: IB Outlets
     @IBOutlet weak var fioOU: UILabel!
     @IBOutlet weak var userNameOU: UILabel!
     @IBOutlet weak var statusOU: UILabel!
@@ -30,7 +21,19 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var genderOU: UILabel!
     @IBOutlet weak var networkStatusOU: UILabel!
     
+    //MARK: Public properties
+    var fio = ""
+    var status = ""
+    var userName = ""
+    var placeOfBirth = ""
+    var placeOfRezidence = ""
+    var currentWorkPlace = ""
+    var pets: [String] = []
     
+    //MARK: Private properties
+    private let userInfo = UserProfile.getUserProfile()
+    
+    //MARK: Override methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let navBarVC = segue.destination as? UINavigationController else { return }
         
@@ -52,13 +55,11 @@ class ProfileViewController: UIViewController {
         avatarImageOU.layer.cornerRadius = avatarImageOU.frame.width / 2
         fioOU.text = self.fio
         statusOU.text = self.status
-//        статус в сети
         editOU.layer.cornerRadius =  15
         userNameOU.text = self.userName
         placeOfBirthOU.text = self.placeOfBirth
         placeOfRezidenceOU.text = self.placeOfRezidence
         genderOU.text = userInfo.personalInfo.gender
-        
         if userInfo.authorization.networkStatus == true {
             networkStatusOU.text = "Online"
         } else {
